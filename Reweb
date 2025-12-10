@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Café</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #fff8f0;
+        }
+
+        header {
+            background: #7a4e2d;
+            color: white;
+            padding: 20px 40px;
+            text-align: center;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            background: #56341e;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .hero {
+            background: url("https://images.unsplash.com/photo-1504754524776-8f4f37790ca0") center/cover no-repeat;
+            height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 40px;
+            font-weight: bold;
+            text-shadow: 2px 2px 10px black;
+        }
+
+        .section {
+            padding: 40px;
+            text-align: center;
+        }
+
+        .menu-items {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .item {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        footer {
+            background: #7a4e2d;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>☕ Cozy Café</header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="hero" id="home">
+        Welcome to Cozy Café
+    </div>
+
+    <div class="section" id="menu">
+        <h2>Our Menu</h2>
+
+        <div class="menu-items">
+            <div class="item">
+                <h3>Cold Coffee</h3>
+                <p>₹120</p>
+            </div>
+            <div class="item">
+                <h3>Hot Cappuccino</h3>
+                <p>₹100</p>
+            </div>
+            <div class="item">
+                <h3>Veg Sandwich</h3>
+                <p>₹80</p>
+            </div>
+            <div class="item">
+                <h3>French Fries</h3>
+                <p>₹70</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section" id="contact">
+        <h2>Contact Us</h2>
+        <p>📍 India</p>
+        <p>📞 +91 000000000</p>
+    </div>
+
+    <footer>
+        © 2025 Cozy Café — Made with ❤
+    </footer>
+
+</body>
+</html>
